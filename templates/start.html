@@ -1,0 +1,54 @@
+<!doctype html>
+<title>Stock Plotter</title>
+<div class=page>
+  <h1>Stock Plotter Miniproject</h1>
+  <div class=metanav>
+
+    <form id='stockinfo_form' method='post' action='index' >
+      <p>
+    Enter Stock Symbol: <input type='text' name='symbol' value='IBM' size='6'/>
+      </p>
+      <input type="checkbox" name="check1" value=1 checked> Closing Price<br>
+      <input type="checkbox" name="check2" value=2> Adjusted Closing Price<br>
+      <input type="checkbox" name="check3" value=3> Opening Price<br>
+      <input type="checkbox" name="check4" value=4> Adjusted Opening Price<br>
+      <input type="checkbox" name="check5" value=5 > Volume<br>
+      <input type="checkbox" name="check6" value=6 > Adjusted Volume<br>
+      <p>
+    Select Month: <select name='month'>
+       <option value='1'>January</option>
+       <option value='2'>February</option>
+       <option value='3'>March</option>
+       <option value='4'>April</option>
+       <option value='5'>May</option>
+       <option value='6'>June</option>
+       <option value='7'>July</option>
+       <option value='8'>August</option>
+       <option value='9'>September</option>
+       <option value='10'>October</option>
+       <option value='11'>November</option>
+       <option value='12'>December</option>
+       <option value='13'>Maximum Data Range</option>
+     </select>
+    <br>
+      <p>
+    Enter Year: <input type='text' name='year' value=2018 maxlength='4' size='6'/>
+      </p>
+    <br>
+    <br>
+    <input type='submit' value='Plot' />
+      </p>
+    </form>
+	<p>
+	This site will plot the opening/closing stock price or volume of your choice for a given month and year <br><br>
+
+	Stock data is retrieved using the Quandl WIKI API <br>
+	Analysis is performed using Python3 and the PANDAS library <br>
+	Plotting is done using Bokeh <br><br>
+
+	Created by Eric J. Campbell for <a href="https://www.thedataincubator.com">The Data Incubator</a>  <a href="https://www.thedataincubator.com/12day.html">12-Day Program</a>
+	</p>
+
+  </div>
+</div>
+</html>

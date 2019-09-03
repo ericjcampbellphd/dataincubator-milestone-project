@@ -1,0 +1,8 @@
+flask
+pandas
+bokeh
+requests
+simplejson
+dill
+jinja2
+pip
